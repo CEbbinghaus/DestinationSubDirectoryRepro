@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Thing.A\Thing.A.csproj">
+            <DestinationSubDirectory>A\</DestinationSubDirectory>
+        </ProjectReference>
+        <ProjectReference Include="..\Thing.B\Thing.B.csproj">
+            <DestinationSubDirectory>B\</DestinationSubDirectory>
+        </ProjectReference>
+        <ProjectReference Include="..\Thing.C\Thing.C.csproj">
+            <DestinationSubDirectory>C\</DestinationSubDirectory>
+        </ProjectReference>
+    </ItemGroup>
+
+</Project>
