@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project>
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
@@ -6,8 +6,8 @@
         <Nullable>enable</Nullable>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <IsPackable>false</IsPackable>
-   
-        
+
+
         <GenerateDependencyFile>false</GenerateDependencyFile>
         <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
         <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
@@ -29,6 +29,15 @@
         </ProjectReference>
     </ItemGroup>
 
+
     <Target Name="CreateManifestResourceNames" />
     <Target Name="CoreCompile" />
+
+    <Target Name="CopyProjectReferencesOutput" AfterTargets="Build">
+        <!-- Log list of all copied files -->
+        <Message Importance="high" Text="Copying $(TargetPath) to $(OutputPath)" />
+
+        <!-- <Copy SourceFiles="@(ProjectReferencePaths)" DestinationFolder="$(OutputPath)" /> -->
+    </Target>
+
 </Project>

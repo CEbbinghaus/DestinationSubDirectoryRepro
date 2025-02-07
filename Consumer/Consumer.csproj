@@ -6,8 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <!-- <Import Project="..\Things\Things.proj" /> -->
     <ItemGroup>
-        <ProjectReference Include="..\Things\Things.proj">
+        <ProjectReference Include="..\Things\Things.proj" ReferenceOutputAssembly="false">
             <DestinationSubDirectory>Things\</DestinationSubDirectory>
         </ProjectReference>
     </ItemGroup>
