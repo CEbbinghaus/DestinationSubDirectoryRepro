@@ -4,6 +4,17 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <IsPackable>false</IsPackable>
+   
+        
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+        <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+        <CopyDocumentationFileToOutputDirectory>false</CopyDocumentationFileToOutputDirectory>
+
+        <CopyBuildOutputToPublishDirectory>false</CopyBuildOutputToPublishDirectory>
+        <CopyOutputSymbolsToPublishDirectory>false</CopyOutputSymbolsToPublishDirectory>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,4 +29,6 @@
         </ProjectReference>
     </ItemGroup>
 
+    <Target Name="CreateManifestResourceNames" />
+    <Target Name="CoreCompile" />
 </Project>

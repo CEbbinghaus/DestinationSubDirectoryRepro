@@ -18,3 +18,11 @@ C/bin
 - B/
 -- B.dll
 ```
+
+## This repository
+
+This reproduction uses a slightly more real-world inspired usecase. In particular collecting a collection of projects under a single output directory.
+
+`Thing.A` / `Thing.B` / `Thing.C` are all "related" projects that should be collected together. While here they are all class libraries in the real world they are more likely executables that we want to ship within our software.
+
+Things is an empty project

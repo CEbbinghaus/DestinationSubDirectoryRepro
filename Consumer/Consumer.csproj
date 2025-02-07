@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Things\Things.csproj">
+        <ProjectReference Include="..\Things\Things.proj">
             <DestinationSubDirectory>Things\</DestinationSubDirectory>
         </ProjectReference>
     </ItemGroup>
